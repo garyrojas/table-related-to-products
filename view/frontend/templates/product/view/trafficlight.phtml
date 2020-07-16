@@ -1,0 +1,16 @@
+<?php
+
+/** @var $block \Rojas\ProductTrafficLight\Block\Product\View */
+
+$semaforo = $block->getTrafficLight();
+?>
+<div class="product-traffic-light">
+<?php if($semaforo): ?>
+    <div class="product-traffic-light-element" style="background-color: <?php echo $semaforo;?>; width: 100px; height: 100px;">
+    </div>
+<?php else: ?>
+    <div class="">
+        No tiene calificación Semaforo.
+    </div>
+<?php endif; ?>
+</div>
